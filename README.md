@@ -1,2 +1,2 @@
-# endian
-Cross-platform endian conversion
+# byte_order
+Cross-platform endian buffer I/O
