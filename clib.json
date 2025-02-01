@@ -1,0 +1,14 @@
+{
+    "name": "endian",
+    "version": "0.0.0",
+    "repo": "goodcleanfun/endian",
+    "description": "Cross-platform endian buffer I/O",
+    "keywords": ["endian", "byte order", "io"],
+    "license": "MIT",
+    "development": {
+      "silentbicycle/greatest": "*"
+    },
+    "src": [
+      "src/byte_order.h"
+    ]
+  }
