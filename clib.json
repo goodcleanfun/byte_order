@@ -1,6 +1,6 @@
 {
     "name": "byte_order",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "repo": "goodcleanfun/endian",
     "description": "Cross-platform endian buffer I/O",
     "keywords": ["endian", "byte order", "io"],
