@@ -20,6 +20,14 @@ TEST test_byte_order(void) {
     write_uint32_little_endian(buf32, y);
     ASSERT_EQ(read_uint32_little_endian(buf32), y);
 
+    float f = 1.23456789;
+    uint8_t buf_float[4];
+    write_float_big_endian(buf_float, f);
+    ASSERT_EQ(read_float_big_endian(buf_float), f);
+
+    write_float_little_endian(buf_float, f);
+    ASSERT_EQ(read_float_little_endian(buf_float), f);
+
     uint64_t z = 0x123456789abcdef0;
     uint8_t buf64[8];
     write_uint64_big_endian(buf64, z);
@@ -27,6 +35,14 @@ TEST test_byte_order(void) {
 
     write_uint64_little_endian(buf64, z);
     ASSERT_EQ(read_uint64_little_endian(buf64), z);
+
+    double d = 1.23456789;
+    uint8_t buf_double[8];
+    write_double_big_endian(buf_double, d);
+    ASSERT_EQ(read_double_big_endian(buf_double), d);
+
+    write_double_little_endian(buf_double, d);
+    ASSERT_EQ(read_double_little_endian(buf_double), d);
 
     PASS();
 }
